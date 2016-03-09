@@ -1,69 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Alex Cortez</title>
-        <style>
-            body{
-                background-color: rgb(255, 0, 230);
-                color: rgb(242, 242, 242);
-            }
-            ul{
-                color:rgb(5, 5, 237);
-                background-color: rgb(240, 240, 240);
-            }
-            h2{
-                color:rgb(32, 117, 15);
-                background-color: rgb(219, 134, 219);
-            }
-            #navbar {
-                color:rgb(39, 28, 110);
-                background-color:rgb(242, 242, 242);
-            }
-            #main {
-                color:rgb(34, 45, 209);
-            }
-           
-        </style>
-        </head>
-    <body>
-          
-         <div id="navbar">
-             <ul>
-                  <li><a href="./contacts.html">Contacts</a></li>
-                  <li><a href="./portfolio.html">Portfolio</a></li>
-                  <li><a href="./index.html">Home</a></li>
-         </ul>
-             
-             </div>
-         
-         <div id="main">
-              <h1>Alex Cortez</h1>
-              <img src="https://www.kasandbox.org/programming-images/animals/shark.png" alt="Shark swimming">
-         
-         
-         
-         <h2> Where Im From</h2>
-         <p>
-              I was born here in San Jose and I was raised by my parents<br> and godparents, but my godparents raised me most since my parents do<br> no speak English and mostly do not know the ways of America. They<br> still did a good job for always being there for me no matter what.
-                  </p> 
-              
-         <h2> What I am doing right now</h2>
-         <p>   
-            Right now I am working hard as a student at Alpha Cindy<br>
-            Avitia to achieve success in high school, so I can go to<br> 
-            a great college in the future and be very successful in<br> life and not be like my dad working for everyday in his life since he<br> knows that I can have a better life than he has and he and the rest of my<br> family believe in me.
-                </p>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Alex Cortez's Webpage</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:rgb(255, 0, 230);
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 900px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color:rgb(255, 0, 255);
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:120%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                    <li><a href="./portfolio.html">Fish Tank</a></li>
+                    <li><a href="./portfolio.html">Ad Design</a></li>
+                    <li><a href="./portfolio.html">What's For Dinner</a></li>            
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
             
-         
-              
-              
-              
-           
-             
-             
-         </div>
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Alex Cortez's Webpage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info"> I was born here in San Jose,California, I have godparents, regular biological parents, and a little brother who is in second grade. I love them all since they are a very big important part of my life since they are who taught me to be the person that I am today.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info"> I am currently a student here at Alpha Cindy Avitia preparing to go to college by learning all these different skills and learning methods that will help me out in college and in the real world.
+            </div>
 
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
 
-    </body>
+</body>
 </html>
